@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>Menteve EEG Monitor Updates</title>
+		<link>https://raw.githubusercontent.com/menteve-tech/neurostream-releases/refs/heads/main/appcast.xml</link>
+		<description>Update feed for Menteve EEG Monitor</description>
+		<language>en</language>
+
+		<!-- Example update entry -->
+		<item>
+			<title>Version 0.0.1</title>
+			<description>
+				<![CDATA[
+                <ul>
+                    <li>Initial release</li>
+                </ul>
+            ]]>
+			</description>
+			<pubDate>Mon, 16 Mar 2026 10:00:00 +0530</pubDate>
+
+			<!-- Version number (used for comparison) -->
+			<sparkle:version>0.0.1</sparkle:version>
+
+			<!-- Download URL for the installer -->
+			<enclosure
+                url="https://github.com/menteve-tech/neurostream-releases/releases/download/v0.0.1/Menteve-Neurostream-0.0.1.msi"
+                length="45000000"
+                type="application/octet-stream"
+                sparkle:installerArguments="/SILENT"
+                sparkle:signature="MD4CHQD2Kr5pI7Sd2JcsQ2+Q1DrVUnwDbJsMh+cwRnJ4Ah0A+eqW9oKxokOQzXKvHTgfNFJEuG5cDQ3wHXtitw==" />
+
+			<!-- Minimum system version (optional) -->
+			<sparkle:minimumSystemVersion>10.0</sparkle:minimumSystemVersion>
+		</item>
+
+		<!-- Current version (1.0.0) - no need to list if this is the first release -->
+		<item>
+			<title>Version 0.0.1</title>
+			<description>
+				<![CDATA[
+                <h3>Initial Release</h3>
+                <ul>
+                    <li>Real-time OpenGL visualization engine</li>
+                    <li>Direct HID (USB) connection support</li>
+                    <li>Signal processing (bandpass, notch)</li>
+                    <li>EDF recording</li>
+                    <li>Five montage display modes</li>
+                    <li>Impedance measurement interface</li>
+                    <li>LSL output support</li>
+                    <li>WinSparkle auto-update integration</li>
+                    <li>Configurable filter parameters</li>
+                </ul>
+            ]]>
+			</description>
+			<pubDate>Mon, 16 Mar 2026 10:00:00 +0530</pubDate>
+			<sparkle:version>0.0.1</sparkle:version>
+		</item>
+	</channel>
+</rss>
