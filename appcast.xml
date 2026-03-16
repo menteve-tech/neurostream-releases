@@ -6,54 +6,72 @@
 		<description>Update feed for Menteve EEG Monitor</description>
 		<language>en</language>
 
-		<!-- Example update entry -->
+		<!-- Latest version (0.0.2) -->
 		<item>
-			<title>Version 0.0.1</title>
+			<title>Version 0.0.2</title>
 			<description>
 				<![CDATA[
-                <ul>
-                    <li>Initial release</li>
-                </ul>
+                <html>
+                <head>
+                    <style>
+                        body {
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            background-color: #ffffff;
+                            color: #000000;
+                            padding: 10px;
+                            margin: 0;
+                        }
+                        h3 {
+                            color: #2c3e50;
+                            margin-top: 0;
+                            font-size: 14px;
+                        }
+                        p {
+                            margin: 10px 0;
+                            font-size: 12px;
+                            line-height: 1.5.0;
+                        }
+                        ul {
+                            padding-left: 20px;
+                            margin: 10px 0;
+                            font-size: 12px;
+                        }
+                        li {
+                            color: #333333;
+                            margin: 5px 0;
+                            line-height: 1.0;
+                            font-size: 12px;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <h3>Neurostream v0.0.2 — Visualization Improvements & Bug Fixes</h3>
+                    <p>This patch release improves EEG trace rendering quality and resolves minor UI issues discovered after the initial release.</p>
+                    <ul>
+                        <li>Improved OpenGL visualizer with anti-aliased line rendering (4× MSAA, line smoothing, alpha blending) for smoother EEG traces</li>
+                        <li>Implemented DPI-aware amplitude scaling to ensure consistent µV/mm representation across different displays</li>
+                        <li>Fixed annotation banner visibility issue in the UI</li>
+                    </ul>
+                    <p>This release focuses on visual accuracy and rendering quality improvements for the EEG display engine.</p>
+                </body>
+                </html>
             ]]>
 			</description>
-			<pubDate>Mon, 16 Mar 2026 10:00:00 +0530</pubDate>
+			<pubDate>Mon, 16 Mar 2026 14:00:00 +0530</pubDate>
 
 			<!-- Version number (used for comparison) -->
-			<sparkle:version>0.0.1</sparkle:version>
+			<sparkle:version>0.0.2</sparkle:version>
 
-			<!-- Download URL for the installer -->
+			<!-- Download URL for the installer - LOCALHOST FOR TESTING -->
 			<enclosure
-                url="https://github.com/menteve-tech/neurostream-releases/releases/download/v0.0.1/Menteve-Neurostream-0.0.1.msi"
-                length="45000000"
+                url="https://github.com/menteve-tech/neurostream-releases/releases/download/v0.0.2/Menteve-Neurostream-0.0.2.msi"
+                length="122204672"
                 type="application/octet-stream"
-                sparkle:installerArguments="/SILENT"
-                sparkle:signature="MD4CHQD2Kr5pI7Sd2JcsQ2+Q1DrVUnwDbJsMh+cwRnJ4Ah0A+eqW9oKxokOQzXKvHTgfNFJEuG5cDQ3wHXtitw==" />
+                sparkle:installerArguments="/passive /norestart"
+                sparkle:dsaSignature="MDwCHGkrgempgm0MGCcRt0YLITUd8qjICMSq1yE4V+0CHEirWu7c6kY8B+pezUTZeFEy3D63tEwiagrqBbc=" />
 
 			<!-- Minimum system version (optional) -->
 			<sparkle:minimumSystemVersion>10.0</sparkle:minimumSystemVersion>
-		</item>
-
-		<!-- Current version (1.0.0) - no need to list if this is the first release -->
-		<item>
-			<title>Version 0.0.1</title>
-			<description>
-				<![CDATA[
-                <h3>Initial Release</h3>
-                <ul>
-                    <li>Real-time OpenGL visualization engine</li>
-                    <li>Direct HID (USB) connection support</li>
-                    <li>Signal processing (bandpass, notch)</li>
-                    <li>EDF recording</li>
-                    <li>Five montage display modes</li>
-                    <li>Impedance measurement interface</li>
-                    <li>LSL output support</li>
-                    <li>WinSparkle auto-update integration</li>
-                    <li>Configurable filter parameters</li>
-                </ul>
-            ]]>
-			</description>
-			<pubDate>Mon, 16 Mar 2026 10:00:00 +0530</pubDate>
-			<sparkle:version>0.0.1</sparkle:version>
 		</item>
 	</channel>
 </rss>
