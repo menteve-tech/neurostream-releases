@@ -57,7 +57,7 @@
                 </html>
             ]]>
 			</description>
-			<pubDate>Mon, 16 Mar 2026 14:00:00 +0530</pubDate>
+			<pubDate>Mon, 16 Mar 2026 20:00:00 +0530</pubDate>
 
 			<!-- Version number (used for comparison) -->
 			<sparkle:version>0.0.2</sparkle:version>
@@ -68,7 +68,7 @@
                 length="122204672"
                 type="application/octet-stream"
                 sparkle:installerArguments="/passive /norestart"
-                sparkle:dsaSignature="MDwCHGkrgempgm0MGCcRt0YLITUd8qjICMSq1yE4V+0CHEirWu7c6kY8B+pezUTZeFEy3D63tEwiagrqBbc=" />
+                sparkle:dsaSignature="MD4CHQC4Heq9DsYYZdwNFvS91Ad9UB/dEdxEpOzspkGxAh0Aj9qLWTLybTt5M1ttyxSgvpgo88DFzSqg+DPnOg==" />
 
 			<!-- Minimum system version (optional) -->
 			<sparkle:minimumSystemVersion>10.0</sparkle:minimumSystemVersion>
