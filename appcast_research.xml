@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>Menteve Neurostream Research Edition Updates</title>
+		<link>https://raw.githubusercontent.com/menteve-tech/neurostream-releases/refs/heads/main/appcast_research.xml</link>
+		<description>Update feed for Menteve Neurostream Research Edition</description>
+		<language>en</language>
+
+		<!-- Latest version (0.0.3) -->
+		<item>
+			<title>Version 0.0.3</title>
+			<description>
+				<![CDATA[
+                <html>
+                <head>
+                    <style>
+                        body {
+                            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                            background-color: #ffffff;
+                            color: #000000;
+                            padding: 10px;
+                            margin: 0;
+                        }
+                        h3 {
+                            color: #2c3e50;
+                            margin-top: 0;
+                            font-size: 14px;
+                        }
+                        p {
+                            margin: 10px 0;
+                            font-size: 12px;
+                            line-height: 1.5;
+                        }
+                        ul {
+                            padding-left: 20px;
+                            margin: 10px 0;
+                            font-size: 12px;
+                        }
+                        li {
+                            color: #333333;
+                            margin: 5px 0;
+                            line-height: 1.5;
+                            font-size: 12px;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <h3>Menteve EEG Monitor v0.0.4 — Variant Refinements & UI Overhaul</h3>
+
+                    <p><strong>UI Overhaul:</strong></p>
+                    <ul>
+                        <li>Redesigned live monitor toolbar with responsive breakpoints and high-DPI support</li>
+                        <li>Redesigned recordings viewer to match live-analysis visual language</li>
+                        <li>Custom timeline slider and sharpened assets across all screens</li>
+                    </ul>
+
+                    <p><strong>Annotations:</strong></p>
+                    <ul>
+                        <li>Editable annotations in both live acquisition and EDF viewer</li>
+                        <li>Predefined event vocabulary; custom labels reused within a session</li>
+                        <li>XDF annotation duration now persists on save</li>
+                    </ul>
+
+                    <p><strong>Clinical &amp; Research Variants:</strong></p>
+                    <ul>
+                        <li>Separate channel configurations and impedance maps per variant</li>
+                        <li>Separate predefined annotation event lists per variant</li>
+                        <li>Fixed clinical channel mapping (T5/T6, A2/A1, T3/T4)</li>
+                    </ul>
+
+                    <p><strong>Bug Fixes:</strong></p>
+                    <ul>
+                        <li>APP_VARIANT now set correctly at runtime in packaged clinical builds</li>
+                        <li>Bundled missing image assets in both Clinical and Research installers</li>
+                        <li>Improved connection, streaming, and recording reliability</li>
+                    </ul>
+                </body>
+                </html>
+            ]]>
+			</description>
+			<pubDate>Tue, 06 May 2026 14:00:00 +0530</pubDate>
+
+			<!-- Version number (used for comparison) -->
+			<sparkle:version>0.0.4</sparkle:version>
+
+			<!-- Download URL for the installer - UPDATE AFTER GITHUB RELEASE -->
+			<enclosure
+                url="https://github.com/menteve-tech/neurostream-releases/releases/download/v0.0.4/Menteve-Neurostream-Research-0.0.4.msi"
+                length="170053635"
+                type="application/octet-stream"
+                sparkle:installerArguments="/passive /norestart"
+                sparkle:dsaSignature="MD0CHFuDQjV6GkiphQseLRXy4E4zIVfMiE1TRMwlnWQCHQDqLIZXZbOVgUwSiYCSt3pH9wb0Zx0u3mGH2rKW" />
+
+			<!-- Minimum system version (Windows 10) -->
+			<sparkle:minimumSystemVersion>10.0</sparkle:minimumSystemVersion>
+		</item>
+	</channel>
+</rss>
