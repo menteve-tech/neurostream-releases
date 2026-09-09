@@ -6,9 +6,9 @@
 		<description>Update feed for Menteve Neurostream Research Edition</description>
 		<language>en</language>
 
-		<!-- Latest version (0.0.3) -->
+		<!-- Latest version (0.0.5) -->
 		<item>
-			<title>Version 0.0.3</title>
+			<title>Version 0.0.5</title>
 			<description>
 				<![CDATA[
                 <html>
@@ -45,51 +45,51 @@
                     </style>
                 </head>
                 <body>
-                    <h3>Menteve EEG Monitor v0.0.4 — Variant Refinements & UI Overhaul</h3>
+                    <h3>Menteve EEG Monitor v0.0.5 — LSL Streaming, ADC Scaling &amp; Sensitivity Bar</h3>
 
-                    <p><strong>UI Overhaul:</strong></p>
+                    <p><strong>LSL Streaming:</strong></p>
                     <ul>
-                        <li>Redesigned live monitor toolbar with responsive breakpoints and high-DPI support</li>
-                        <li>Redesigned recordings viewer to match live-analysis visual language</li>
-                        <li>Custom timeline slider and sharpened assets across all screens</li>
+                        <li>Discover, activate and record LSL streams with no headset attached</li>
+                        <li>Streams refresh automatically; departed producers are deactivated and the plots rebuilt</li>
+                        <li>Recordings containing PsychoPy markers are no longer discarded on save</li>
                     </ul>
 
-                    <p><strong>Annotations:</strong></p>
+                    <p><strong>Recording:</strong></p>
                     <ul>
-                        <li>Editable annotations in both live acquisition and EDF viewer</li>
-                        <li>Predefined event vocabulary; custom labels reused within a session</li>
-                        <li>XDF annotation duration now persists on save</li>
+                        <li>"Record Filtered Data" toggle to store raw, pre-filter samples</li>
+                        <li>File extension now follows the selected format (EDF / XDF)</li>
                     </ul>
 
-                    <p><strong>Clinical &amp; Research Variants:</strong></p>
+                    <p><strong>Amplitude &amp; Scaling:</strong></p>
                     <ul>
-                        <li>Separate channel configurations and impedance maps per variant</li>
-                        <li>Separate predefined annotation event lists per variant</li>
-                        <li>Fixed clinical channel mapping (T5/T6, A2/A1, T3/T4)</li>
+                        <li>New calibration bar (+X µV / 0 / −X µV) in the live monitor and the EDF viewer</li>
+                        <li>Both windows now use one amplitude rule: a channel row spans −A … +A µV, so a 2A µV peak-to-peak signal fills it exactly</li>
+                        <li>Amplitude limited to 1–300 µV; scales saved by older builds are clamped on load</li>
                     </ul>
 
                     <p><strong>Bug Fixes:</strong></p>
                     <ul>
-                        <li>APP_VARIANT now set correctly at runtime in packaged clinical builds</li>
-                        <li>Bundled missing image assets in both Clinical and Research installers</li>
-                        <li>Improved connection, streaming, and recording reliability</li>
+                        <li>Corrected ADS1299 conversion — every voltage and impedance reading was 2× too high and is now half its previous value</li>
+                        <li>Channel visibility survives stream and montage changes</li>
                     </ul>
+
+                    <p><strong>Note:</strong> the research amplitude setting has changed meaning — a view that looked right at 25 µV is the 50 µV setting now.</p>
                 </body>
                 </html>
             ]]>
 			</description>
-			<pubDate>Tue, 06 May 2026 14:00:00 +0530</pubDate>
+			<pubDate>Wed, 09 Sep 2026 20:00:00 +0530</pubDate>
 
 			<!-- Version number (used for comparison) -->
-			<sparkle:version>0.0.4</sparkle:version>
+			<sparkle:version>0.0.5</sparkle:version>
 
 			<!-- Download URL for the installer - UPDATE AFTER GITHUB RELEASE -->
 			<enclosure
-                url="https://github.com/menteve-tech/neurostream-releases/releases/download/v0.0.4/Menteve-Neurostream-Research-0.0.4.msi"
-                length="170053635"
+                url="https://github.com/menteve-tech/neurostream-releases/releases/download/v0.0.5/Menteve-Neurostream-Research-0.0.5.msi"
+                length="170584042"
                 type="application/octet-stream"
                 sparkle:installerArguments="/passive /norestart"
-                sparkle:dsaSignature="MD0CHFuDQjV6GkiphQseLRXy4E4zIVfMiE1TRMwlnWQCHQDqLIZXZbOVgUwSiYCSt3pH9wb0Zx0u3mGH2rKW" />
+                sparkle:dsaSignature="MDwCHDIBZNmqziCb7CGGuFohH7W4Vtos1malDk86xwUCHFSQZ2nnJotUssIFsy9xKlLGebBVI2Zy0QYeN0M=" />
 
 			<!-- Minimum system version (Windows 10) -->
 			<sparkle:minimumSystemVersion>10.0</sparkle:minimumSystemVersion>
